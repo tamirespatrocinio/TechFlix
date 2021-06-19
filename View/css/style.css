@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 100;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+header .btn-header {
+    position: relative;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 15px;
+    color: #fff;
+    background: #5D9DB7;
+    letter-spacing: 1px;
+    padding: 5px 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: zoom 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+.content {
+    position: relative;
+    z-index: 1;
+    max-width: 550px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.banner .content p {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #fff;
+    margin: 10px 0 20px;
+}
+
+.btn {
+    position: relative;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+    background: #5D9DB7;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#form p {
+    font-size: 0.9em;
+}
+
+#form div input {
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid #5D9DB7;
+    width: 300px;
+    height: 39px;
+    padding-left: 6px;
+    font-size: 18px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+
+@media (max-width: 991px) {
+
+    header {
+        padding: 20px 50px;
+        flex-direction: column;
+    }
+
+    .banner {
+        padding: 100px 50px;
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .banner {
+        padding: 220px 20px 120px;
+    }
+
+}
