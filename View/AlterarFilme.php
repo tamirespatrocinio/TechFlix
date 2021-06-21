@@ -8,20 +8,22 @@ $codigo = $_GET["codigo"];
 $resul = visuCodigoFilme($conexao, $codigo);
 $filme = mysqli_fetch_assoc($resul);
 ?>
+
 <div class="container">
+
     <form action="../Controller/alteraFilme.php" method="post" class="row g-3">
 
-        <div class="col-md-1">
+        <div class="col-md-2">
             <label for="inputCodigo" class="form-label">Código</label>
             <input type="text" readonly value="<?= $filme['codfil'] ?>" name="codfil" class="form-control" id="inputCodigo">
         </div>
 
-        <div class="col-md-8">
+        <div class="col-md-6">
             <label for="inputFilme" class="form-label">Filme</label>
             <input type="text" value="<?= $filme['nomefil'] ?>" name="filme" class="form-control" id="inputFilme">
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-4">
             <label for="inputGenero" class="form-label">Gênero</label>
             <input type="text" value="<?= $filme['generofil'] ?>" name="genero" class="form-control" id="inputGenero">
         </div>
@@ -42,16 +44,21 @@ $filme = mysqli_fetch_assoc($resul);
         </div>
 
         <div class="form-floating">
-            <textarea class="form-control" name="sinopse" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"><?= $filme['sinopsefil'] ?></textarea>
+            <textarea class="form-control" name="sinopse" id="floatingTextarea2" style="height: 100px"><?= $filme['sinopsefil'] ?></textarea>
             <label for="floatingTextarea2">Sinopse</label>
         </div>
 
         <div class="col-12">
-            <button type="submit" class="btn btn-primary">Salvar alterações</button>
+            <button type="submit" class="btn">Salvar alterações</button>
+
+            <form action="../Controller/deleteFilme.php" method="POST">
+                <input type="hidden" name="codfil" value="<?= $dados["codfil"] ?>">
+                <button class="btn" type="submit">Deletar</button>
+            </form>
+
         </div>
     </form>
 </div>
-
 <?php
 include("Footer.php")
 ?>

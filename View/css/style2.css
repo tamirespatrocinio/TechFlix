@@ -7,9 +7,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
+a, p {
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
 body {
     background-color: rgb(0, 0, 0);
     
+}
+
+body div{
+    width: 100%;
 }
 
 .banner {
@@ -35,7 +44,7 @@ body {
 .container{
     position: relative;
     z-index: 1;
-    max-width: 550px;
+    max-width: 700px;
 }
 
 .btn {
@@ -47,6 +56,7 @@ body {
     display: inline-block;
     color: #fff;
     margin-right: 10px;
+    margin-bottom: 20px;
     background: #5D9DB7;
     padding: 8px 20px;
     text-decoration: none;
@@ -57,11 +67,35 @@ body {
     border-radius: 5px;
 }
 
-label{
+label, td, th{
     color: #fff;
 }
 
 input, textarea{
     opacity: 0.9;
     resize: none;
+}
+
+.tableColor{
+    color: #fff;
+}
+
+/************* Footer **********/
+.copyright{
+    padding-top: 10px; 
+}
+
+.menu a{
+    padding-left: 20px;
+}
+
+.icon{
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+
+.icon:hover, 
+.menu a:hover, 
+.copyright a:hover{
+    color: #5D9DB7;
 }

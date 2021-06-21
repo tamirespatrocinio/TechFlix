@@ -57,7 +57,7 @@
                         </a>
                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item nav-link" href="../View/CadastroSerie.php">Cadastrar</a></li>
-                            <li><a class="dropdown-item nav-link" href="#">Buscar</a></li>
+                            <li><a class="dropdown-item nav-link" href="../View/VisualizarSerie.php">Buscar</a></li>
                         </ul>
                     </li>
                 </ul>

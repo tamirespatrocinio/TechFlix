@@ -2,30 +2,24 @@
 
   <div class="col-md-12 pt-3 pb text-center">
     <p class="menu">
-      <a href="#" style="text-decoration: none; color:#bbbbbb; padding-left: 20px;">Home</a>
-      <a href="#" style="text-decoration: none; color:#bbbbbb; padding-left: 20px;">Filme</a>
-      <a href="#" style="text-decoration: none; color:#bbbbbb; padding-left: 20px;">Série</a>
-      <a href="#" style="text-decoration: none; color:#bbbbbb; padding-left: 20px;">Contato</a>
+      <a href="#">Home</a>
+      <a href="#">Filme</a>
+      <a href="#">Série</a>
+      <a href="#">Contato</a>
     </p>
 
     <div class="container">
 
-      <a class="m-1 px-2" style="color:#bbbbbb;" href="#!" role="button"><i class="fa fa-facebook"></i></a>
+      <a href="#!" role="button"><i class="icon fa fa-facebook"></i></a>
 
-      <a class="m-1 px-2" style="color:#bbbbbb" href="#!" role="button"><i class="fa fa-instagram"></i></a>
+      <a href="#!" role="button"><i class="icon fa fa-instagram"></i></a>
 
-      <a class="m-1 px-2 " style="color:#bbbbbb" href="#!" role="button"><i class="fa fa-github"></i></a>
+      <a href="#!" role="button"><i class="icon fa fa-github"></i></a>
 
-    </div>
 
-    <div class="row mt-2">
-      <div class="col-md-12 text-center">
-        <p class="copyright" style="color:#bbbbbb">
-          Copyright &copy;<script>
-            document.write(new Date().getFullYear());
-          </script> All rights reserved | by <a href="https://github.com/tamirespatrocinio" style="text-decoration: none; color:#bbbbbb" target="_blank">Tamires <i class="fa fa-heart-o" aria-hidden="true"></i></a>
-        </p>
-      </div>
+      <p class="copyright">
+        Copyright &copy;2021 All rights reserved | by <a href="https://github.com/tamirespatrocinio" target="_blank">Tamires <i class="fa fa-heart-o" aria-hidden="true"></i></a>
+      </p>
     </div>
 
 </footer>

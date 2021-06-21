@@ -2,7 +2,6 @@
 include('Header.php');
 ?>
 
-
 <div class="container">
 
     <form action="../Controller/inserirFilme.php" method="get" class="row g-3">
@@ -37,13 +36,10 @@ include('Header.php');
             <textarea type="text" class="form-control" name="sinopse" id="inputSinopse" rows="3"></textarea>
         </div>
 
-
         <a href="#"><button class="btn">Cadastrar</button></a>
+
     </form>
-
-
 </div>
-
 <?php
 include('Footer.php');
 ?>

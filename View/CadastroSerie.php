@@ -6,29 +6,24 @@ include('Header.php');
 
     <form action="../Controller/inserirSerie.php" method="get" class="row g-3">
 
-        <div class="col-md-8">
+        <div class="col-md-12">
             <label for="inputSerie" class="form-label">Série</label>
             <input type="text" name="serie" class="form-control" id="inputSerie">
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-6">
             <label for="inputGenero" class="form-label">Gênero</label>
             <input type="text" name="genero" class="form-control" id="inputGenero">
         </div>
 
-        <div class="col-md-4">
-            <label for="inputAno" class="form-label">Ano</label>
-            <input type="text" name="ano" class="form-control" id="inputAno">
+        <div class="col-md-3">
+            <label for="inputTemporada" class="form-label">Temporada</label>
+            <input type="text" name="temporada" class="form-control" id="inputTemporada">
         </div>
 
-        <div class="col-md-4">
-            <label for="inputAno" class="form-label">Temporada</label>
-            <input type="text" name="ano" class="form-control" id="inputAno">
-        </div>
-
-        <div class="col-md-4">
-            <label for="inputAno" class="form-label">Episódio</label>
-            <input type="text" name="ano" class="form-control" id="inputAno">
+        <div class="col-md-3">
+            <label for="inputEpisodio" class="form-label">Episódios</label>
+            <input type="text" name="episodio" class="form-control" id="inputEpisodio">
         </div>
 
         <div class="col-12">
@@ -41,13 +36,8 @@ include('Header.php');
             <input type="text" name="url" class="form-control" id="inputURL">
         </div>
 
-        <div class="col-md-12">
-            <label for="inputSinopse" class="form-label">Sinopse</label>
-            <textarea type="text" class="form-control" name="sinopse" id="inputSinopse" rows="3"></textarea>
-        </div>
 
         <a href="#"><button class="btn">Cadastrar</button></a>
-
 
     </form>
 </div>
