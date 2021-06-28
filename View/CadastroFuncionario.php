@@ -1,5 +1,6 @@
 <?php
-session_start();
+include_once("../Model/bancoUsuario.php");
+liberaAcesso();
 include("header.php");
 
 
@@ -26,9 +27,7 @@ if ($email) {
         <div class="col-12">
             <button type="submit" class="btn"> Localizar </button>
         </div>
-
     </form>
-
 
     <form action="../Controller/inserirFuncionario.php" method="post" class="row g-3 <?= $aparenciaForm2 ?>">
 
@@ -50,21 +49,18 @@ if ($email) {
         </div>
 
         <div class="col-md-8">
-            <label for="inputFone" class="form-label">Função</label>
+            <label for="inputFun" class="form-label">Função</label>
             <select required name="funcaofun" class="form-select form-select" aria-label=".form-select-lg example">
                 <option value="" selected>Escolha a função</option>
                 <option value="Gerente">Gerente</option>
                 <option value="Operador">Operador</option>
-
             </select>
         </div>
+
         <div class="col-12">
-
             <a href="#"><button type="submit" class="btn">Salvar</button></a>
-
         </div>
     </form>
-
 </div>
 <?php
 include("Footer.php");

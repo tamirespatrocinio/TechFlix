@@ -1,6 +1,5 @@
-  
 <?php
-
+session_start();
 require_once("../Model/bancoFuncionario.php");
 require_once("../Model/conexao.php");
 

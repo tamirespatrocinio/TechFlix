@@ -1,5 +1,7 @@
 <?php
-include_once("Header.php");
+include_once("../Model/bancoUsuario.php");
+liberaAcesso();
+include_once("header.php");
 include_once("../Model/bancoFilme.php");
 include_once("../Model/conexao.php");
 ?>
@@ -7,7 +9,7 @@ include_once("../Model/conexao.php");
 <div class="container">
     <form action="" method="post" class="row g-3">
 
-        <div class="col-4">
+        <div class="col-12">
             <label class="form-label">Digite o nome do filme:</label>
             <input type="text" required class="form-control" name="filme">
             </br>
@@ -28,6 +30,7 @@ include_once("../Model/conexao.php");
                 <th scope="col">Alterar</th>
             </tr>
         </thead>
+
         <tbody>
             <?php
             $filme = isset($_POST["filme"]) ? $_POST["filme"] : "";

@@ -1,9 +1,10 @@
 <?php
+include_once("../Model/bancoUsuario.php");
+liberaAcesso();
 include('Header.php');
 ?>
 
 <div class="container">
-
     <form action="../Controller/inserirSerie.php" method="get" class="row g-3">
 
         <div class="col-md-12">
@@ -35,7 +36,6 @@ include('Header.php');
             <label for="inputURL" class="form-label">URL</label>
             <input type="text" name="url" class="form-control" id="inputURL">
         </div>
-
 
         <a href="#"><button class="btn">Cadastrar</button></a>
 

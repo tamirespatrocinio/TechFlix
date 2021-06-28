@@ -33,8 +33,8 @@ function alterarFilme($conexao, $codfil, $filme, $genero, $sinopse, $ano, $capa,
 
 function deleteFilme($conexao, $codfil)
 {
-
     $query = "delete from tbfilme where codfil='{$codfil}'";
+
     $resultado = mysqli_query($conexao, $query);
     return $resultado;
 }

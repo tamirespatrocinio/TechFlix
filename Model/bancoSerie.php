@@ -7,7 +7,6 @@ function insereSerie($conexao, $serie, $temporada, $episodio, $genero, $capa, $u
     return $resultado;
 }
 
-
 function visuNomeSerie($conexao, $serie)
 {
     $query = "Select * from tbserie where nomeserie like '%{$serie}%'";

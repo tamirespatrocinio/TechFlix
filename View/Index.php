@@ -13,9 +13,7 @@
 <body>
     <header>
         <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
-
-        <a href="#"><button class="btn-header">ENTRAR</button></a>
-
+        <a href="../View/AcessoCliente.php"><button class="btn-header">ENTRAR</button></a>
     </header>
 
     <div class="banner">
@@ -25,7 +23,7 @@
             <h1>Acesse se tiver coragem!</h1>
             <p>Assista às melhores séries, filmes e todo conteúdo disponível TechFlix gratuitamente.</p>
 
-            <a href="#"><button class="btn">Assista grátis</button></a>
+            <a href="../View/CadastroCliente.php"><button class="btn">Cadastre-se grátis</button></a>
 
         </div>
     </div>

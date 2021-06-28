@@ -1,6 +1,5 @@
-  
 <?php
-include_once("../View/Header.php");
+include_once("../View/header.php");
 include_once('../Model/conexao.php');
 include_once('../Model/bancoFilme.php');
 
@@ -13,4 +12,3 @@ if (alterarFilme($conexao, $codfil, $filme, $genero, $sinopse, $ano, $capa, $url
 }
 
 include_once("../View/Footer.php");
-?>

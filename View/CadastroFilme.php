@@ -1,10 +1,11 @@
 <?php
-include('Header.php');
+include_once("../Model/bancoUsuario.php");
+liberaAcesso();
+include("header.php");
 ?>
 
 <div class="container">
-
-    <form action="../Controller/inserirFilme.php" method="get" class="row g-3">
+    <form action="../Controller/inserirFilme.php" method="GET" class="row g-3">
 
         <div class="col-md-8">
             <label for="inputFilme" class="form-label">Filme</label>
@@ -23,12 +24,12 @@ include('Header.php');
 
         <div class="col-md-10">
             <label for="inputCapa" class="form-label">Capa</label>
-            <input type="text" class="form-control" name="capa" id="inputCapa" />
+            <input type="text" name="capa" class="form-control" id="inputCapa">
         </div>
 
-        <div class="col-md-12">
-            <label for="inputUrl" class="form-label">URL</label>
-            <input type="text" class="form-control" name="capa" id="inputUrl" />
+        <div class="col-12">
+            <label for="inputURL" class="form-label">URL</label>
+            <input type="text" name="url" class="form-control" id="inputURL">
         </div>
 
         <div class="col-md-12">
@@ -41,5 +42,5 @@ include('Header.php');
     </form>
 </div>
 <?php
-include('Footer.php');
+include("Footer.php");
 ?>
